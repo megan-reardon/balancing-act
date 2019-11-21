@@ -3,62 +3,88 @@
   <head>
     <title>Balancing Act</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Biryani&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Balancing Act</h1>
-    <nav>
-      <img src="./assets/Balancing-Act/elephant.svg" alt="Elephant balancing on a ball" title="Elephant balancing on a ball" width=10% height=10% />
-      <section>
-        <img src="./assets/Balancing-Act/dashboard.svg" alt="Graph on a clipboard" title="Graph on a clipboard" width=5% height=5% />
-        <img src="./assets/Balancing-Act/transactions.svg" alt="Wallet with credit card sticking out" title="Wallet with credit card" width=5% height=5% />
-        <img src="./assets/Balancing-Act/profile.svg" alt="Cartoon silouette of woman" title="Silouette of woman" width=5% height=5% />
-      </section>
-    </nav>
-    <div class="left-summary"
+    <header>
+      <h1>Balancing Act</h1>
+    </header>
+    <section class="navigation-bar">
+      <img src="./assets/Balancing-Act/elephant.svg" alt="Elephant balancing on a ball" title="Elephant balancing on a ball" class="elephant"/>
+      <nav>
+        <img src="./assets/Balancing-Act/dashboard.svg" alt="Graph on a clipboard" title="Graph on a clipboard" class="medium" />
+        <img src="./assets/Balancing-Act/transactions.svg" alt="Wallet with credit card sticking out" title="Wallet with credit card" class="medium" />
+        <img src="./assets/Balancing-Act/profile.svg" alt="Cartoon silouette of woman" title="Silouette of woman" class="medium" />
+      </nav>
+    </section>
+    <div class="left-summary">
+      <section class="welcome">
       <h3>Welcome, Oscar!</h3>
+      </section>
       <div class="overview">
-        <h5>INCOME</h5>
-        <span>$2,119.12</span>
-        <h5>EXPENSES</h5>
-        <span>$420.54</span>
-        <h5>CREDIT SCORE</h5>
-        <span>673</span>
+        <section class="cards">
+          <h5>INCOME</h5>
+          <p>$2,119.12</p>
+        </section>
+        <section class="cards">
+          <h5>EXPENSES</h5>
+          <p>$420.54</p>
+        </section>
+        <section class="cards">
+          <h5>CREDIT SCORE</h5>
+          <p>673</p>
+        </section>
       </div>
       <section>
+        <div class="heading-container">
         <h2>Accounts</h2>
-        <button class="buttons">MANAGE ACCOUNTS</button>
-        <div class="account-cards">
-      <!-- insert icons -->
-          <span>Wells Fargo</span>
-          <span>Checking</span>
         </div>
-        <div class ="account-cards">
-        <!-- insert icon -->
-          <span>Wells Fargo</span>
-          <span>Savings</span>
-        </div>
-        <div class="account-cards">
-        <!-- insert icon  -->
-          <span>Amazon Credit</span>
-          <span>Credit Card</span>
-        <div class="account-cards">
-          <span>Southwest Credit</span>
-          <span>Credit Card</span>
-      </section>
-    </div>
-      <div class="recent-transactions">
-        <h2>Recent Transactions</h2>
-        <button class="buttons">NEW TRANSACTION</button>
-        <table>
+        <button class="blue-buttons">MANAGE ACCOUNTS</button>
+        <table class="account-cards">
           <tr>
-            <th>Date</th>
-            <th>Payee</th>
-            <th>Inflow</th>
-            <th>Outflow</th>
+            <td class="account-icons"><img src="./assets/Balancing-Act/checking.svg" alt="Checkbook with pen" title="Checkbook with pen" class="small" /></td>
+            <td class="account-name">Wells Fargo</td>
+            <td class="account-type">Checking</td>
+          </tr>
+        </table>
+        <table class="account-cards">
+          <tr>
+            <td class="account-icons"><img src="./assets/Balancing-Act/savings.svg" alt="Piggy bank with a coin" title="Piggy bank" class="small" /></td>
+            <td class="account-name">Wells Fargo</td>
+            <td class="account-type">Savings</td>
+          </tr>
+        </table>
+        <table class="account-cards">
+          <tr>
+            <td class="account-icons"><img src="./assets/Balancing-Act/credit-card.svg" alt="Two credit cards" title="Credit cards" class="small" /></td>
+            <td class="account-name">Amazon Credit</td>
+            <td class="account-type">Credit Card</td>
+          </tr>
+        </table>
+        <table class="account-cards">
+          <tr>
+            <td class="account-icons"><img src="./assets/Balancing-Act/credit-card.svg" alt="Two credit cards" title="Credit cards" class="small" /></td>
+            <td class="account-name">Southwest Credit</td>
+            <td class="account-type">Credit Card</td>
+          </tr>
+        </table>
+        </section>
+      </div>
+      <div class="recent-transactions">
+        <div class="transaction-heading-container">
+          <h2>Recent Transactions</h2>
+        </div>
+        <button class="blue-buttons">NEW TRANSACTION</button>
+        <table class="transactions">
+          <tr>
+            <th class="date">Date</th>
+            <th class="payee">Payee</th>
+            <th class="inflow">Inflow</th>
+            <th class="outflow">Outflow</th>
           </tr>
           <tr>
             <td>Oct 25, 2019</td>
-            <td>Express</td>
+            <td>Target</td>
             <td>-</td>
             <td>$82.35</td>
           </tr>

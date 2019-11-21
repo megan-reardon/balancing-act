@@ -1,21 +1,177 @@
+* {
+  border: 1px, solid red;
+}
+*:before,
+:after {
+  box-sizing: border-box;
+}
 html, body {
-  padding: 0
-  margin: 0
-}
-
-nav {
-
-
-}
-
-.left-summary {
-
+  padding: 0;
+  margin: 0;
+  font-color: #363636;
+  font-family: 'Biryani', sans-serif;
+  background-color: #F5F5F5;
+  box-sizing: border-box;
 }
 
 h1 {
+  font-size: 30px;
+  padding-left: 95px;
+}
 
+.navigation-bar {
+  width: 5%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+nav {
+  width: 100%;
+  height: 40%;
+  bottom: 20;
+  top: 0;
+  background-color: white;
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+.elephant {
+  height: 60px;
+  width: 60px;
+  padding-left: 10%;
+  padding-top: 20%;
+}
+
+.left-summary {
+  float: left;
+  padding-left: 95px;
+  padding-right: 50px;
+  display: inline-block;
+}
+
+.welcome {
+  background-image: linear-gradient(
+    to right,#8ED1DC, #E3F4F6);
+  height: 80px;
+  width: 594px;
+  margin: 5px;
+  padding: 15px 0px 5px 20px;
+  border-radius: 5px;
+}
+
+.cards {
+  background-color: white;
+    width: 180px;
+    margin: 5px;
+    padding: 5px 0px 15px 15px;
+    display: inline-block;
+    height: 80px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.05);
+}
+
+h5 {
+  font-size: 11px;
+}
+
+.cards p {
+  font-size: 16px;
+}
+
+img.small {
+  height: 30px;
+  width: 30px;
+  padding-top: 10px;
+}
+
+img.medium {
+    height: 35px;
+    width: 35px;
+    display: block;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.account-cards {
+  display: block;
+  background-color: white;
+  margin-bottom: 8px;
+  padding: 8px;
+  box-shadow: rgba(0,0,0,0.05);
+  border-radius: 5px;
+  width: 600px;
+}
+
+.account-icons {
+  padding-right: 60px;
+}
+
+.account-name {
+  padding-right: 200px;
+}
+
+.account-type {
+  padding-right: 0px;
+}
+
+.blue-buttons {
+  background-color: #1CA3BA;
+  border-radius: 20px;
+  width: 175px;
+  height: 35px;
+  color: white;
+  padding: 8px;
+  font-family: 'Biryani', sans-serif;
+  font-size: 13px;
+}
+
+.heading-container {
+  display: inline-block;
+  padding: 10px 320px 5px 2px;
+}
+
+/* .transaction-heading-container {
+  display: inline-block;
+  padding: 10px 200px 5px 2px;
+} */
+
+.date {
+  width: 30%;
+  text-align: left;
+}
+
+.payee {
+  width: 35%;
+  text-align: left;
+}
+
+.inflow {
+  width: 20%;
+  text-align: left;
+}
+
+.outflow {
+  width: 20%;
+  text-align: left;
 }
 
 .recent-transactions {
-
+float: left;
+display: inline-block;
+background-color: white;
+padding: 8px;
+box-shadow: rgba(0,0,0,0.05);
+border-radius: 5px;
+width: 575px;
 }
+
+
+/*
+.transactions th, td {
+  border-bottom: 1px solid #CCCCCC; */
+/* }
