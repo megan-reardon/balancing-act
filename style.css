@@ -1,11 +1,10 @@
-* {
-  border: 1px, solid red;
-}
 *:before,
 :after {
   box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
   padding: 0;
   margin: 0;
   font-color: #363636;
@@ -36,7 +35,7 @@ nav {
   bottom: 20;
   top: 0;
   background-color: white;
-  padding-top: 100px;
+  padding-top: 40px;
   margin-top: 100px;
 }
 
@@ -59,9 +58,20 @@ nav {
     to right,#8ED1DC, #E3F4F6);
   height: 80px;
   width: 594px;
-  margin: 5px;
+  margin: 5px 5px 15px 5px;
   padding: 15px 0px 5px 20px;
   border-radius: 5px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  left: 580px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: transparent;
 }
 
 .cards {
@@ -116,7 +126,15 @@ img.medium {
 }
 
 .account-type {
-  padding-right: 0px;
+  text-align: left;
+}
+
+#Amazon {
+  padding-right: 178px;
+}
+
+#Southwest {
+  padding-right: 160px;
 }
 
 .blue-buttons {
@@ -135,13 +153,8 @@ img.medium {
   padding: 10px 320px 5px 2px;
 }
 
-/* .transaction-heading-container {
-  display: inline-block;
-  padding: 10px 200px 5px 2px;
-} */
-
 .date {
-  width: 30%;
+  width: 35%;
   text-align: left;
 }
 
@@ -160,18 +173,28 @@ img.medium {
   text-align: left;
 }
 
+.transaction-heading-container {
+  display: inline-block;
+  padding: 0px 150px 5px 2px;
+}
+
 .recent-transactions {
 float: left;
 display: inline-block;
 background-color: white;
-padding: 8px;
+padding: 5px 20px 20px 20px;
 box-shadow: rgba(0,0,0,0.05);
 border-radius: 5px;
 width: 575px;
+margin: 5px;
 }
 
+.transactions {
+  border-spacing: 0px;
+  border-collapse: collapse;
+  margin-right: 0px;
+}
 
-/*
-.transactions th, td {
-  border-bottom: 1px solid #CCCCCC; */
-/* }
+.recent-transactions td, th {
+  border-bottom: 1px solid #CCCCCC;
+}
