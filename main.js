@@ -1,9 +1,28 @@
 var banner = document.querySelector('.welcome');
 
-var button = document.querySelector('.close-button');
+var bannerButton = document.querySelector('.close-button');
 
-button.addEventListener('click', closeBanner);
+bannerButton.addEventListener('click', closeBanner);
 
 function closeBanner() {
   banner.style.display = 'none';
+}
+
+// function to change border for nav buttons
+var clipboardButton = document.querySelector('.clipboard');
+
+var walletButton = document.querySelector('.wallet');
+
+walletButton.addEventListener('click', addWalletBorder);
+
+function addWalletBorder() {
+  clipboardButton.style.borderLeft = '4px solid white';
+  walletButton.style.borderLeft = '4px solid #1CA3BA';
+}
+
+clipboardButton.addEventListener('click', addClipboardBorder);
+
+function addClipboardBorder() {
+  walletButton.style.borderLeft = '4px solid white';
+  clipboardButton.style.borderLeft = '4px solid #1CA3BA';
 }
