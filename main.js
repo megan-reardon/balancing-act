@@ -15,14 +15,17 @@ var walletButton = document.querySelector('.wallet');
 
 walletButton.addEventListener('click', addWalletBorder);
 
-function addWalletBorder() {
-  clipboardButton.style.borderLeft = '4px solid white';
-  walletButton.style.borderLeft = '4px solid #1CA3BA';
-}
-
 clipboardButton.addEventListener('click', addClipboardBorder);
 
+function addWalletBorder() {
+  walletButton.classList.remove('white-border');
+  walletButton.classList.add('teal-border');
+  clipboardButton.classList.remove('teal-border');
+  clipboardButton.classList.add('white-border');
+};
+
 function addClipboardBorder() {
-  walletButton.style.borderLeft = '4px solid white';
-  clipboardButton.style.borderLeft = '4px solid #1CA3BA';
-}
+  clipboardButton.classList.add('teal-border');
+  walletButton.classList.remove('teal-border');
+  walletButton.classList.add('white-border');
+};

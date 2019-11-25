@@ -40,21 +40,18 @@ nav {
 }
 
 .clipboard {
-  border-left: 4px solid #1CA3BA;
   border-right: none;
   border-bottom: none;
   border-top: none;
 }
 
 .wallet {
-  border-left: 4px solid white;
   border-right: none;
   border-bottom: none;
   border-top: none;
 }
 
 .woman-face {
-  border-left: 4px solid white;
   border-right: none;
   border-bottom: none;
   border-top: none;
@@ -218,4 +215,12 @@ margin: 5px;
 
 .recent-transactions td, th {
   border-bottom: 1px solid #CCCCCC;
+}
+
+.white-border {
+  border-left: 4px solid white;
+}
+
+.teal-border {
+  border-left: 4px solid #1CA3BA;
 }
