@@ -20,11 +20,7 @@ walletButton.addEventListener('click', populateTransactionContent);
 
 var dashboardContent = document.querySelector('.dashboard-content');
 
-dashboardContent.addEventListener('click', populateTransactionContent);
-
 var transactionContent = document.querySelector('.transaction-content');
-
-transactionContent.addEventListener('click', populateTransactionContent);
 
 function populateTransactionContent() {
   walletButton.classList.replace('white-border', 'teal-border');
