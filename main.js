@@ -1,3 +1,4 @@
+// Function to make banner disappear
 var banner = document.querySelector('.welcome');
 
 var bannerButton = document.querySelector('.close-button');
@@ -8,24 +9,33 @@ function closeBanner() {
   banner.style.display = 'none';
 }
 
-// function to change border for nav buttons
+// function to change border and content when nav buttons are clicked
 var clipboardButton = document.querySelector('.clipboard');
+
+clipboardButton.addEventListener('click', populateDashboardContent);
 
 var walletButton = document.querySelector('.wallet');
 
-walletButton.addEventListener('click', addWalletBorder);
+walletButton.addEventListener('click', populateTransactionContent);
 
-clipboardButton.addEventListener('click', addClipboardBorder);
+var dashboardContent = document.querySelector('.dashboard-content');
 
-function addWalletBorder() {
-  walletButton.classList.remove('white-border');
-  walletButton.classList.add('teal-border');
-  clipboardButton.classList.remove('teal-border');
-  clipboardButton.classList.add('white-border');
+dashboardContent.addEventListener('click', populateTransactionContent);
+
+var transactionContent = document.querySelector('.transaction-content');
+
+transactionContent.addEventListener('click', populateTransactionContent);
+
+function populateTransactionContent() {
+  walletButton.classList.replace('white-border', 'teal-border');
+  clipboardButton.classList.replace('teal-border', 'white-border');
+  dashboardContent.classList.replace('display-visible', 'display-hidden');
+  transactionContent.classList.replace('display-hidden', 'display-visible');
 };
 
-function addClipboardBorder() {
-  clipboardButton.classList.add('teal-border');
-  walletButton.classList.remove('teal-border');
-  walletButton.classList.add('white-border');
+function populateDashboardContent() {
+  clipboardButton.classList.replace('white-border', 'teal-border');
+  walletButton.classList.replace('teal-border', 'white-border');
+  dashboardContent.classList.replace('display-hidden', 'display-visible');
+  transactionContent.classList.replace('display-visible', 'display-hidden');
 };
