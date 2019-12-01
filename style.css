@@ -10,7 +10,6 @@ body {
   font-color: #363636;
   font-family: 'Biryani', sans-serif;
   background-color: #F5F5F5;
-  box-sizing: border-box;
 }
 
 .display-visible {
@@ -22,15 +21,15 @@ body {
 }
 
 h1 {
-  font-size: 30px;
   padding-left: 95px;
+  font-size: 30px;
 }
 
 .navigation-bar {
-  width: 5%;
   position: fixed;
   left: 0;
   top: 0;
+  width: 5%;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -38,13 +37,13 @@ h1 {
 }
 
 nav {
-  width: 100%;
-  height: 40%;
   bottom: 20;
   top: 0;
-  background-color: white;
+  width: 100%;
+  height: 40%;
   padding-top: 40px;
   margin-top: 100px;
+  background-color: white;
 }
 
 .clipboard {
@@ -73,21 +72,21 @@ nav {
 }
 
 .left-summary {
+  display: inline-block;
   float: left;
   padding-left: 95px;
   padding-right: 50px;
-  display: inline-block;
 }
 
 .welcome {
   background-image: linear-gradient(
     to right,#8ED1DC, #E3F4F6);
+  position: relative;
   height: 80px;
   width: 594px;
   margin: 5px 5px 15px 5px;
   padding: 15px 0px 5px 20px;
   border-radius: 5px;
-  position: relative;
 }
 
 .close-button {
@@ -101,14 +100,14 @@ nav {
 }
 
 .cards {
+  display: inline-block;
+  width: 180px;
+  margin: 5px;
+  padding: 5px 0px 15px 15px;
   background-color: white;
-    width: 180px;
-    margin: 5px;
-    padding: 5px 0px 15px 15px;
-    display: inline-block;
-    height: 80px;
-    border-radius: 5px;
-    box-shadow: rgba(0,0,0,0.05);
+  height: 80px;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.05);
 }
 
 h5 {
@@ -126,21 +125,21 @@ img.small {
 }
 
 img.medium {
-    height: 35px;
-    width: 35px;
-    display: block;
-    padding: 5px 0px 10px 10px;
-    margin-top: 15px;
+  display: block;
+  height: 35px;
+  width: 35px;
+  padding: 5px 0px 10px 10px;
+  margin-top: 15px;
 }
 
 .account-cards {
   display: block;
-  background-color: white;
+  width: 600px;
   margin-bottom: 8px;
   padding: 8px;
   box-shadow: rgba(0,0,0,0.05);
   border-radius: 5px;
-  width: 600px;
+  background-color: white;
 }
 
 .account-icons {
@@ -164,12 +163,12 @@ img.medium {
 }
 
 .blue-buttons {
-  background-color: #1CA3BA;
-  border-radius: 20px;
   width: 175px;
   height: 35px;
   color: white;
   padding: 8px;
+  background-color: #1CA3BA;
+  border-radius: 20px;
   font-family: 'Biryani', sans-serif;
   font-size: 13px;
 }
@@ -207,12 +206,12 @@ img.medium {
 .recent-transactions {
 float: left;
 display: inline-block;
-background-color: white;
 padding: 5px 20px 20px 20px;
-box-shadow: rgba(0,0,0,0.05);
-border-radius: 5px;
 width: 575px;
 margin: 5px;
+box-shadow: rgba(0,0,0,0.05);
+border-radius: 5px;
+background-color: white;
 }
 
 .transactions {
@@ -231,4 +230,131 @@ margin: 5px;
 
 .teal-border {
   border-left: 4px solid #1CA3BA;
+}
+
+.transactions-header {
+  display: inline-block;
+  padding: 0px 120px 5px 10px;
+}
+
+.all-transactions-button {
+  display: inline;
+  padding: 5px 8px 2px 8px;
+  width: 105px;
+  height: 30px;
+  background-color: #1CA3BA;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Biryani', sans-serif;
+  font-size: 12px;
+}
+
+.inactive-buttons {
+  display: inline;
+  width: 105px;
+  height: 30px;
+  padding: 5px 8px 2px 8px;
+  background-color: white;
+  color: #1CA3BA;
+  border-radius: 20px;
+  border: 2px solid #1CA3BA;
+  font-family: 'Biryani', sans-serif;
+  font-size: 12px;
+}
+
+.transactions-summary {
+  float: left;
+  margin: 0px 50px 0px 100px;
+  padding: 10px 10px 10px 30px;
+  background-color: white;
+  box-shadow: rgba(0,0,0,0.05);
+  border-radius: 5px;
+}
+
+.new-transactions-log {
+  float: left;
+  width: 27%;
+  padding: 0px 65px 35px 65px;
+  margin: 0px 0px 0px 50px;
+  background-color: white;
+  box-shadow: rgba(0,0,0,0.05);
+  border-radius: 5px;
+}
+
+.new-transaction-header {
+  padding: 0px 0px 0px 100px;
+}
+
+.transactions-all {
+  display: inline-block;
+  padding: 20px 10px 0px 0px;
+  width: 600px;
+  height: 521px;
+  margin-right: 0px;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.transactions-all td, th {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.transactions-all tr {
+  height: 40px;
+}
+
+.date-transactions {
+  width: 20%;
+}
+
+.account-transactions {
+  width: 20%;
+}
+
+.payee-transactions {
+  width: 25%;
+}
+
+.inflow-transactions {
+  width: 20%;
+}
+
+.outflow-transactions {
+  width: 10%;
+}
+
+.dropdowns {
+  width: 400px;
+  font-family: 'Biryani', sans-serif;
+  font-size: 12px;
+  border: none;
+  box-shadow: -1px 4px 15px 3px rgba(221,221,221,0.82);
+  border-radius: 5px;
+}
+
+.transaction-form {
+  padding: 5px;
+  margin: 0px;
+}
+
+.input-form {
+  width: 400px;
+  height: 20px;
+  font-size: 12px;
+  border: none;
+  box-shadow: -1px 4px 15px 3px rgba(221,221,221,0.82);
+  border-radius: 5px;
+}
+
+.log-expense-button {
+  margin: 10px 0px 10px 0px;
+  padding: 8px;
+  width: 150px;
+  height: 35px;
+  background-color: #1CA3BA;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Biryani', sans-serif;
+  font-size: 13px;
 }
